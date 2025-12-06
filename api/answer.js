@@ -5,7 +5,11 @@ export default function handler(req, res) {
 
     const data = req.body;
 
-    console.log("Someone clicked:", data);
+    console.log("❤️ Someone clicked YES at:", data.time);
 
-    return res.status(200).json({ status: "received", data: data });
+    return res.status(200).json({
+        status: "received",
+        message: "YES clicked logged",
+        data: data
+    });
 }
