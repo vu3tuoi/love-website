@@ -45,39 +45,7 @@
 
     <button id="yesBtn">YES</button>
     <button id="noBtn">NO</button>
-
-    <script>
-        const noBtn = document.getElementById("noBtn");
-
-        // NÚT NO CHẠY TRỐN
-        noBtn.addEventListener("mouseover", () => {
-            const x = Math.random() * window.innerWidth * 0.8;
-            const y = Math.random() * window.innerHeight * 0.8;
-            noBtn.style.left = x + "px";
-            noBtn.style.top = y + "px";
-        });
-
-        // GỬI DỮ LIỆU VỀ SERVER
-        function sendToServer(answer, callback){
-            fetch("https://your-server.com/api/answer", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({ answer: answer, time: Date.now() })
-            }).then(() => {
-                if(callback) callback();
-            });
-        }
-
-        // CLICK YES → GỬI DỮ LIỆU → CHUYỂN TRANG
-        document.getElementById("yesBtn").onclick = () => {
-            sendToServer("YES", () => {
-                window.location.href = "thankyou.html"; // 🔥 chuyển trang
-            });
-        };
-
-        // CLICK NO → GỬI DỮ LIỆU (không chuyển trang)
-        document.getElementById("noBtn").onclick = () => sendToServer("NO");
-    </script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
