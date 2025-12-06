@@ -1,51 +1,30 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Do you love me?</title>
     <style>
-        body {
-            text-align: center;
-            margin-top: 60px;
-            font-family: Arial;
-        }
-        #noBtn {
-            position: absolute;
-            left: 50%;
-            top: 60%;
-            padding: 12px 25px;
-            background: red;
-            color: white;
-            border: none;
-            border-radius: 10px;
+        #yesBtn, #noBtn {
+            padding: 10px 20px;
+            font-size: 20px;
             cursor: pointer;
-            transition: 0.1s;
+            position: absolute;
         }
         #yesBtn {
-            padding: 12px 25px;
-            background: green;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 18px;
+            left: 40%;
+            top: 50%;
         }
-        img {
-            width: 250px;
+        #noBtn {
+            left: 55%;
+            top: 50%;
         }
     </style>
 </head>
 <body>
 
-    <h1>Em có yêu anh không?</h1>
+    <button id="yesBtn">YES 💖</button>
+    <button id="noBtn">NO 😭</button>
 
-    <img src="download.gif" alt="cute gif">
-
-    <br><br>
-
-    <button id="yesBtn">YES</button>
-    <button id="noBtn">NO</button>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
