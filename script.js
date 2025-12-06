@@ -15,7 +15,7 @@ yesBtn.addEventListener("click", async () => {
     });
 
     // Chuyển sang trang khác
-    window.location.href = "love.html";
+    window.location.href = "thankyou.html";
 });
 
 // 🔴 Nút NO chạy trốn mỗi khi di chuột vào
